@@ -31,6 +31,8 @@ body {
   align-items: center;
   border: none;
   border-radius: 10px;
+  position: sticky;
+  top: 0;
 }
 
 /* LOGO */
@@ -110,10 +112,70 @@ body {
 
 .hero-section {
   width: 100%;
-  height: 80vh;
+  /* height: 80vh; */
   border: none;
   border-radius: 20px;
   background-color: rgb(25, 51, 25);
+  display: flex;
+  padding: 20px;
+}
+
+.hero-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.shipping {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.322);
+  width: 40%;
+  align-items: center;
+  justify-content: space-around;
+  border: none;
+  border-radius: 20px;
+}
+
+.hero-head {
+  font-size: 38px;
+  color: white;
+  word-spacing: 10px;
+}
+
+.hero-head span {
+  color: orange;
+  text-decoration: underline white;
+}
+
+.hero-content {
+  font-size: 20px;
+  color: white;
+}
+
+.hero-right {
+  width: 50%;
+}
+
+.hero-right img {
+  width: 100%;
+  height: 100%;
+}
+
+.location {
+  /* width: 20%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 30%;
+  background-color: rgb(167, 158, 158);
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.location img {
+  width: 30px;
 }
 
 /* CATALOG SECTION */
@@ -148,6 +210,7 @@ body {
 .category-boxes {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .box {
@@ -380,6 +443,7 @@ body {
   gap: 50px;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .item {
