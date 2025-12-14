@@ -15,7 +15,31 @@
 
     <!-- HEADER SECTION -->
     <div class="header-section">
+
+        <!-- Hamburger for mobile -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+
+
+        <!-- Mobile phone menu(navbar) -->
+
+        <div class="mobile-menu">
+            <label for="menu-toggle" class="menu-btn">
+                <i class="fa-solid fa-xmark close"></i>
+            </label>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#catalog-section">Catalog</a></li>
+                <li><a href="#shop-section">Shop</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </ul>
+            <button class="signup">Sign Up</button>
+        </div>
+
         <div class="header">
+            <label for="menu-toggle" class="menu-btn">
+                <i class="fa-solid fa-bars open"></i>
+            </label>
             <img src="assets/web-icon.png" alt="icon" class="logo-icon">
             <div class="logo">Fresh Bazar</div>
 
