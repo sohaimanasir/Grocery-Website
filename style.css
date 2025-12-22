@@ -1255,6 +1255,11 @@ body {
     color: black;
     font-size: 18px;
   }
+  .mobile-menu ul li a:hover {
+    text-decoration: orange;
+    text-decoration-thickness: 3px;
+    text-decoration-line: underline;
+  }
 
   .mobile-menu .signup {
     display: block;
