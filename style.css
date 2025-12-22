@@ -16,9 +16,6 @@ body {
   gap: 20px;
 }
 
- .mobile-menu {
-  display: none;
- }
 .header-section {
   max-width: 1200px;
   margin: 0 auto;
@@ -764,11 +761,10 @@ body {
 @media (min-width: 601px) and (max-width: 1024px) {
   /* body */
 
-  body{
+  body {
     margin: 5px;
   }
 
-  
   /* HEADER */
 
   .header {
@@ -778,9 +774,8 @@ body {
 
   /* NAVBAR */
 
-  .mobile-menu{
+  .mobile-menu {
     display: none;
-  
   }
 
   .nav ul {
@@ -1190,8 +1185,8 @@ body {
 
 @media screen and (max-width: 600px) {
   /* body */
-  
-  body{
+
+  body {
     margin: 5px;
   }
 
@@ -1212,28 +1207,27 @@ body {
     display: none;
   } */
 
-
   .menu-toggle {
     display: none;
   }
 
   /* icons default state */
-  .open {
-    display: none;
+  .header .open {
+    display: block;
   }
 
-  .close {
+  .mobile-menu .close {
     display: none;
   }
 
   /* toggle icons */
 
-  #menu-toggle:checked ~ .menu-btn .close {
-    display: block;
+  #menu-toggle:checked ~ .header .menu-btn .open {
+    display: none;
   }
 
-  #menu-toggle:checked ~ header .menu-btn .open {
-    display: none;
+  #menu-toggle:checked ~ .mobile-menu .menu-btn .close {
+    display: block;
   }
 
   /* mobile menu */
@@ -1241,20 +1235,19 @@ body {
     display: none;
     flex-direction: column;
     gap: 20px;
-    background-color: green;
     padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
   }
 
   #menu-toggle:checked ~ .mobile-menu {
     display: flex;
   }
 
-  
   .mobile-menu ul {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    list-style: none
+    list-style: none;
   }
 
   .mobile-menu ul li a {
